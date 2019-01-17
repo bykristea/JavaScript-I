@@ -87,15 +87,8 @@ for (let i =0; i < inventory.length; i++)
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+
 // let carModels = [];
-
-// for (let i = 0; i < inventory.length; i++) {
-//     let models = inventory[i].car_model;
-//     carModels.push(models);
-//     carModels.sort();
-//     console.log(carModels);
-
-// }
 let carModels = [];
 
 
@@ -121,7 +114,7 @@ console.log(carYears);
 let oldCars =[];
 
 for (let i = 0; i < carYears.length; i++) {
-    if (carYears[i] > 2000) {
+    if (carYears[i] < 2000) {
         oldCars.push(carYears[i]);
     }
 }
